@@ -1,0 +1,12 @@
+integration:
+  build: ./
+  encrypted_env_file: integration.env.encrypted
+
+test:
+  build: ./
+  encrypted_env_file: test.env.encrypted
+
+gov:
+  build:
+    context: .
+    dockerfile: Dockerfile
